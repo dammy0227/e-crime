@@ -4,11 +4,10 @@ module.exports = {
       {
         test: /\.js$/,
         enforce: 'pre',
+        exclude: /node_modules/,
         use: ['source-map-loader'],
-        exclude: [
-          /node_modules\/@tensorflow-models\/coco-ssd/,
-        ],
       },
     ],
   },
+  ignoreWarnings: [/source map error/],
 };
