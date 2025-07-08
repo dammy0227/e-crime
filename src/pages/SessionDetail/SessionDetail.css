@@ -1,0 +1,235 @@
+/* Base Styles */
+.session-detail-container {
+  padding: 2rem;
+}
+
+.session-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.session-created {
+  margin-bottom: 1rem;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.start-monitoring-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.start-monitoring-button:hover {
+  background-color: #0056b3;
+}
+
+.violations-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.no-violations {
+  font-style: italic;
+  color: #666;
+}
+
+.violation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .violation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.violation-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.violation-type {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.violation-time {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.media-container {
+  margin-top: 0.5rem;
+}
+
+.violation-image,
+.violation-video {
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  border-radius: 0.25rem;
+}
+
+.violation-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.violation-status {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.action-buttons button {
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.review-button {
+  color: green;
+}
+
+.review-button:hover {
+  text-decoration: underline;
+}
+
+.dismiss-button {
+  color: red;
+}
+
+.dismiss-button:hover {
+  text-decoration: underline;
+}
+
+.session-loading {
+  padding: 2rem;
+  font-style: italic;
+  color: gray;
+}
+
+.session-max-faces {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .session-detail-container {
+    padding: 1rem;
+  }
+
+  .session-title {
+    font-size: 1.2rem;
+  }
+
+  .session-created {
+    font-size: 0.8rem;
+  }
+
+  .start-monitoring-button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .violations-heading {
+    font-size: 1rem;
+  }
+
+  .violation-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .violation-card {
+    padding: 0.75rem;
+  }
+
+  .violation-type {
+    font-size: 0.85rem;
+  }
+
+  .violation-time,
+  .violation-status {
+    font-size: 0.75rem;
+  }
+
+  .violation-image,
+  .violation-video {
+    max-height: 180px;
+  }
+
+  .action-buttons button {
+    font-size: 0.75rem;
+  }
+
+  .session-max-faces {
+    font-size: 0.9rem;
+  }
+
+  .session-loading {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .session-title {
+    font-size: 1.1rem;
+  }
+
+  .start-monitoring-button {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .violation-card {
+    padding: 0.5rem;
+  }
+
+  .violation-type,
+  .violation-time,
+  .violation-status {
+    font-size: 0.7rem;
+  }
+
+  .violation-image,
+  .violation-video {
+    max-height: 150px;
+  }
+
+  .action-buttons button {
+    font-size: 0.7rem;
+  }
+
+  .violations-heading {
+    font-size: 0.95rem;
+  }
+
+  .session-max-faces {
+    font-size: 0.85rem;
+  }
+}
+
+/* Prevent horizontal scroll on small screens */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}

@@ -1,0 +1,138 @@
+.camera-container {
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+.camera-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* margin-bottom: 1rem; */
+}
+
+.camera-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 78vh;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-video {
+  width: 100vw;
+  height: 900vh;
+  object-fit: cover;
+  box-shadow: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.camera-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  pointer-events: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.camera-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.monitor-button,
+.zoom-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.monitor-button.start {
+  background-color: #28a745;
+}
+
+.monitor-button.stop {
+  background-color: #dc3545;
+}
+
+.zoom-button {
+  background-color: #007bff;
+}
+
+.zoom-button:hover {
+  background-color: #0056b3;
+}
+
+/* ✅ Responsive styles */
+@media (max-width: 768px) {
+  .camera-container {
+    height: 98vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .camera-heading {
+    display: none;
+  }
+
+  .camera-wrapper {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .camera-video {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .camera-controls {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+  }
+
+  .monitor-button,
+  .zoom-button {
+    width: 45%;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .camera-heading {
+    display: none; /* Hide heading on very small screens */
+  }
+
+  .camera-wrapper {
+    height: 100vh;
+  }
+
+  .monitor-button,
+  .zoom-button {
+    width: 90%;
+    font-size: 0.9rem;
+    /* padding: 8px 16px; */
+  }
+
+}
