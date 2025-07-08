@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@tensorflow-models/blazeface": "^0.0.5",
-    "@tensorflow-models/coco-ssd": "^2.2.2",
+    "@tensorflow-models/coco-ssd": "^2.1.0",
     "@tensorflow-models/facemesh": "^0.0.4",
     "@tensorflow/tfjs": "^2.8.6",
     "@tensorflow/tfjs-backend-webgl": "^2.8.6",
