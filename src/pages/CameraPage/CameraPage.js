@@ -5,7 +5,7 @@ import * as tf from '@tensorflow/tfjs';
 import * as faceMesh from '@tensorflow-models/facemesh';
 import * as blazeface from '@tensorflow-models/blazeface';
 import * as cocoSsd from '@tensorflow-models/coco-ssd';
-import '@tensorflow/tfjs-backend-webgl';
+// import '@tensorflow/tfjs-backend-webgl';
 import { uploadViolationEvidence } from '../../services/uploadViolationEvidence';
 import API from '../../services/api';
 import { useParams, useNavigate } from 'react-router-dom';
