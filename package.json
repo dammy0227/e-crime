@@ -7,7 +7,7 @@
     "@tensorflow-models/coco-ssd": "^1.0.0",
     "@tensorflow-models/facemesh": "^0.0.4",
     "@tensorflow/tfjs": "^1.7.4",
-    "@tensorflow/tfjs-converter": "^1.7.4",
+  "@tensorflow/tfjs-converter": "~1.2.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
